@@ -1,0 +1,54 @@
+\documentclass[letterpaper, 11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{times}
+
+% lucimono is custom package I made ages ago for the Lucida Mono font I purchased.
+%  use luximono on systems without it.
+\newif\ifmyhaslucimono
+\makeatletter
+\let\originput\@@input
+\makeatother
+
+\IfFileExists{lucimono.sty}{\myhaslucimonotrue}{\myhaslucimonofalse}
+
+\ifmyhaslucimono
+\usepackage[scaled=0.8]{lucimono}
+\else
+\usepackage[scaled=0.8]{luximono}
+\fi
+
+\usepackage{upquote}
+\usepackage{footnote}
+\usepackage{tikz}
+
+\newcommand{\myhref}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+\tikzstyle{mybox} = [draw=red, fill=blue!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle} =[fill=red, text=white]
+
+\usepackage[unicode,colorlinks,linkcolor=violet,urlcolor=blue,pdftitle=Proposal\ for\ NEURODIVERSITY\ Emoji]{hyperref}
+
+\title{Proposal for NEURODIVERSITY Emoji}
+\author{Alice Wonder}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract.tex}
+
+\tableofcontents
+
+\pagebreak
+
+\input{identification.tex}
+\input{images.tex}
+
+\input{inclusion.tex}
+\input{special.tex}
+
+\end{document}
+
