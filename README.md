@@ -11,7 +11,7 @@ Unicode Consortium for an Emoji that represents our community, our identity.
 Requesting an Emoji is a fairly complex process. The guidelines for such a
 request are outlined here:
 
-(Submitting Emoji Character Proposals)[https://unicode.org/emoji/proposals.html]
+[Submitting Emoji Character Proposals](https://unicode.org/emoji/proposals.html)
 
 A very rough draft of my proposal is in this github repository, in the file
 `proposal.pdf`
