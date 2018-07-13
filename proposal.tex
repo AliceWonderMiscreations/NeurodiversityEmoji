@@ -23,7 +23,11 @@
 \usepackage{footnote}
 \usepackage{tikz}
 
+% put url in footnote for hyperlinks
 \newcommand{\myhref}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+% use the section numbering scheme also used in official proposal template
+\renewcommand{\thesubsection}{\thesection.\Alph{subsection}}
 
 \tikzstyle{mybox} = [draw=red, fill=blue!20, very thick,
     rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
@@ -40,15 +44,22 @@
 
 \input{abstract.tex}
 
+\input{conventions.tex}
 \tableofcontents
+\listoffigures
 
 \pagebreak
+
+%\input{conventions.tex}
 
 \input{identification.tex}
 \input{images.tex}
 
 \input{inclusion.tex}
 \input{special.tex}
+
+\appendix
+\input{figures.tex}
 
 \end{document}
 
