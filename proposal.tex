@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{times}
+\usepackage{amssymb}
 
 % lucimono is custom package I made ages ago for the Lucida Mono font I purchased.
 %  use luximono on systems without it.
@@ -21,6 +22,9 @@
 
 \usepackage{upquote}
 \usepackage{footnote}
+\usepackage{subfig}
+\usepackage{enumitem}
+\setlist{noitemsep}
 \usepackage{tikz}
 
 % put url in footnote for hyperlinks
@@ -28,6 +32,15 @@
 
 % use the section numbering scheme also used in official proposal template
 \renewcommand{\thesubsection}{\thesection.\Alph{subsection}}
+
+% define emoji strings
+\newcommand{\brainemoji}{\textbf{BRAIN} (\texttt{U+1F9E0})}
+\newcommand{\jigsawemoji}{\textbf{JIGSAW} (\texttt{U+1F9E9})}
+\newcommand{\rainbow}{\textbf{RAINBOW} (\texttt{U+1F308})}
+\newcommand{\prideflag}{\textbf{RAINBOW FLAG} (sequence \texttt{U+1F3F3 U+200D U+1F308})}
+\newcommand{\nerdface}{\textbf{NERDFACE} (\texttt{U+1F913})}
+\newcommand{\goldheart}{\textbf{YELLOW HEART} (\texttt{U+1F49B})}
+\newcommand{\infinityemoji}{$\circledast{}$ \textbf{INFINITY} (\texttt{U+267E})}
 
 \usepackage[unicode,colorlinks,linkcolor=violet,urlcolor=blue,pdftitle=Proposal\ for\ NEURODIVERSITY\ Emoji]{hyperref}
 

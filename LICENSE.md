@@ -35,6 +35,7 @@ Neurodiversity Concept Emoji Art
 The concept art emoji files:
 
 * neurodiversity.png
+* neurodiversity256.png
 * neurodiversity128.png
 * neurodiversity72.png
 
@@ -44,6 +45,17 @@ repository: (https://github.com/googlei18n/noto-emoji)
 
 They are licensed under the Apache 2.0 license. A copy of that license should
 exist in this directory, called `Noto-Emoji-Apache-2.0-LICENSE`.
+
+The concept art emoji files:
+
+* SpectrumInfinity.png
+* SpectrumInfinity256.png
+* SpectrumInfinity128.png
+* SpectrumInfinity72.png
+
+are derivatives of the public domain rainbow infinity loop at Wikimedia Commons
+and fall under the public domain. See:
+(https://commons.wikimedia.org/wiki/File:Autism_spectrum_infinity_awareness_symbol.svg)
 
 
 Other Images

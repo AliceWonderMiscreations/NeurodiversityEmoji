@@ -4,10 +4,11 @@ This proposal is attempting to follow the proposal guidelines specified at
 \url{https://unicode.org/emoji/proposals.html} using the same section numbering
 scheme used in the form specification there.
 
-Upper case bold text indicates the CLDR short name of an emoji. Monospace (typewriter)
-text beginning with \texttt{U+} indicates a Unicode codepoint. When referencing a CLDR
-short name for an existing emoji, usually it will be accompanied with the Unicode
-codepoint or sequence to avoid any possible confusion.
+Existing emojis will be referenced using upper case bold text for the CLDR short name
+followed by the unicode codepoint or sequence in monospace text within parenthesis.
+
+\LaTeX{} does not yet support color emoji glyphs directly. I do however plan to embed
+an image between the CLDR and the codepoint, but have not yet implemented that plan.
 
 Hyperlinks where the text of the hyperlink is not the URL will have the URL specified
 in a footnote.
@@ -39,7 +40,8 @@ Community participation has been sought at both Twitter and Facebook \emph{er, w
 before submission of this proposal to the Unicode Consortium to make sure this proposal is
 congruent with the those the emoji is intended to represent.
 
-Document compile instructions (below) to be removed before final submission.
+\subsection*{Document Compile Instructions}
+This subsection to be removed before final submission.
 
 For those familiar with \LaTeX{} who wish to submit a pull request, this PDF document
 should compile with any somewhat recent version of
@@ -53,6 +55,9 @@ using the following method:
 \begin{verbatim}
 pdflatex proposal.tex && pdflatex proposal.tex && pdflatex proposal.tex
 \end{verbatim}
+
+Do not include updated PDF if your pull request, but please do check that and TeX changes
+do not break compiling of the document.
 
 For those not familiar with \LaTeX{} just open an issue with the github project with your
 suggested changes.
