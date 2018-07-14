@@ -5,10 +5,22 @@ This proposal is attempting to follow the proposal guidelines specified at
 scheme used in the form specification there.
 
 Existing emojis will be referenced using upper case bold text for the CLDR short name
-followed by the unicode codepoint or sequence in monospace text within parenthesis.
+followed by an image of the emoji.
 
-\LaTeX{} does not yet support color emoji glyphs directly. I do however plan to embed
-an image between the CLDR and the codepoint, but have not yet implemented that plan.
+Unfortunately \TeX{}Live does not directly support color emoji fonts. I was forced to
+create the following hack:
+
+\begin{verbatim}
+\newcommand{\emojipedia}[1]{$\vcenter{\hbox{\includegraphics[height=\baselineskip]{emojipedia/#1}}}$}
+\end{verbatim}
+
+It works visually but it means the emoji can not be copied into a clipboard as the
+Unicode codepoint or codepoint sequence. In other words, it is dirty. Hopefully a
+mechanism for using color emoji fonts with \TeX{}Live and \texttt{pdflatex} that
+allows copying the emoji as text will be developed.
+
+PNG images for the emojis were obtained from \url{https://emojipedia.org/} and actually
+represent a variety of color emoji fonts, I picked what I liked.
 
 Hyperlinks where the text of the hyperlink is not the URL will have the URL specified
 in a footnote.

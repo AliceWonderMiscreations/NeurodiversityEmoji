@@ -34,13 +34,15 @@
 \renewcommand{\thesubsection}{\thesection.\Alph{subsection}}
 
 % define emoji strings
-\newcommand{\brainemoji}{\textbf{BRAIN} (\texttt{U+1F9E0})}
-\newcommand{\jigsawemoji}{\textbf{JIGSAW} (\texttt{U+1F9E9})}
-\newcommand{\rainbow}{\textbf{RAINBOW} (\texttt{U+1F308})}
-\newcommand{\prideflag}{\textbf{RAINBOW FLAG} (sequence \texttt{U+1F3F3 U+200D U+1F308})}
-\newcommand{\nerdface}{\textbf{NERDFACE} (\texttt{U+1F913})}
-\newcommand{\goldheart}{\textbf{YELLOW HEART} (\texttt{U+1F49B})}
-\newcommand{\infinityemoji}{$\circledast{}$ \textbf{INFINITY} (\texttt{U+267E})}
+\newcommand{\emojipedia}[1]{$\vcenter{\hbox{\includegraphics[height=\baselineskip]{emojipedia/#1}}}$}
+%
+\newcommand{\brainemoji}{\textbf{BRAIN} \emojipedia{brain_1f9e0.png}}
+\newcommand{\jigsawemoji}{\textbf{JIGSAW} \emojipedia{jigsaw-puzzle-piece_1f9e9.png}}
+\newcommand{\rainbow}{\textbf{RAINBOW} \emojipedia{rainbow_1f308.png}}
+\newcommand{\prideflag}{\textbf{RAINBOW FLAG} \emojipedia{rainbow-flag_1f3f3-fe0f-200d-1f308.png}}
+\newcommand{\nerdface}{\textbf{NERDFACE} \emojipedia{nerd-face_1f913.png}}
+\newcommand{\goldheart}{\textbf{YELLOW HEART} \emojipedia{yellow-heart_1f49b.png}}
+\newcommand{\infinityemoji}{$\circledast{}$ \textbf{INFINITY} \emojipedia{permanent-paper-sign_267e.png}}
 
 \usepackage[unicode,colorlinks,linkcolor=violet,urlcolor=blue,pdftitle=Proposal\ for\ NEURODIVERSITY\ Emoji]{hyperref}
 
