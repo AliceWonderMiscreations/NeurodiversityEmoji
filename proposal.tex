@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{times}
-\usepackage{amssymb}
+%\usepackage{amssymb}
 
 % lucimono is custom package I made ages ago for the Lucida Mono font I purchased.
 %  use luximono on systems without it.
@@ -27,6 +27,16 @@
 \setlist{noitemsep}
 \usepackage[section]{placeins}
 \usepackage{tikz}
+% fancy
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Alice Wonder}
+\chead{Neurodiversity Emojis Proposal}
+\rhead{\rightmark}
+\lfoot{Neurodiversity Emojis Proposal}
+\cfoot{\thepage}
+\rfoot{\rightmark}
 
 % put url in footnote for hyperlinks
 \newcommand{\myhref}[2]{\href{#1}{#2}\footnote{\url{#1}}}
@@ -41,9 +51,9 @@
 \newcommand{\jigsawemoji}{\textbf{JIGSAW} \emojipedia{jigsaw-puzzle-piece_1f9e9.png}}
 \newcommand{\rainbow}{\textbf{RAINBOW} \emojipedia{rainbow_1f308.png}}
 \newcommand{\prideflag}{\textbf{RAINBOW FLAG} \emojipedia{rainbow-flag_1f3f3-fe0f-200d-1f308.png}}
-\newcommand{\nerdface}{\textbf{NERDFACE} \emojipedia{nerd-face_1f913.png}}
+\newcommand{\nerdface}{\textbf{NERD FACE} \emojipedia{nerd-face_1f913.png}}
 \newcommand{\goldheart}{\textbf{YELLOW HEART} \emojipedia{yellow-heart_1f49b.png}}
-\newcommand{\infinityemoji}{$\circledast{}$ \textbf{INFINITY} \emojipedia{permanent-paper-sign_267e.png}}
+\newcommand{\infinityemoji}{\textbf{INFINITY} \emojipedia{permanent-paper-sign_267e.png}}
 
 \usepackage[unicode,colorlinks,linkcolor=violet,urlcolor=blue,pdftitle=Proposal\ for\ NEURODIVERSITY\ Emojis]{hyperref}
 
@@ -76,8 +86,11 @@
 \pagebreak
 \appendix
 \input{figures.tex}
+\clearpage
 \pagebreak
 \input{acknowledgements.tex}
+\pagebreak
+\input{inlineemoji.tex}
 
 \end{document}
 

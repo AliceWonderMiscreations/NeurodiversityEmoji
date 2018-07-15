@@ -17,19 +17,12 @@ Existing emojis used in this document will be referenced using upper case bold t
 followed by an image of the emoji.
 
 Unfortunately \TeX{}Live does not directly support color emoji fonts. I was forced to
-use the following hack:
+use a hack that inserts the emojis as images.
 
-\begin{verbatim}
-$\vcenter{\hbox{\includegraphics[height=\baselineskip]{emojiasimage.png}}}$
-\end{verbatim}
-
-It works visually but it means the emoji can not be copied into a clipboard as the
-Unicode codepoint or codepoint sequence. In other words, it is dirty. Hopefully a
-mechanism for using color emoji fonts with \TeX{}Live and \texttt{pdflatex} that
-allows copying the emoji as text will be developed.
-
-PNG images for the emojis were obtained from \url{https://emojipedia.org/} and actually
-represent a variety of color emoji fonts, I picked what I liked.
+I apologize if that screws up automated software that generates emoji use statistics.
+\LaTeX{} is the only word processor I ever was able to figure out how to get it to do
+what I want. Well, um,
+until now when I wanted to insert emojis... ;)
 
 \subsection*{Hyperlinks}
 
@@ -38,11 +31,11 @@ in a footnote.
 
 \subsection*{Figures}
 
-With the exception of the concept are for the proposed emojis at the top of
-this document, all figures appear in Appendix~\ref{apx:figures}. This was done because
-some of the figures are referenced more than once, and to make it easier to note that
-the images in the figures are used under the Fair Use doctrine so that it is very
-clear the copyright to those images does not belong to me. I like to be very clear
+With the exception of the concept art for the proposed emojis at the top of
+this document, all figures appear in Appendix~\ref{apx:figures}.
+This makes it easier to note that the images in the figures are used under the Fair
+Use doctrine so that it is very clear the copyright to those images does not belong
+to me. I like to be very clear
 when it comes to intellectual property.
 
 \subsection*{Community Participation}
@@ -54,29 +47,11 @@ This document was created on a
 where any member of the community is free to either create issues or submit pull
 requests.
 
-Community participation has been sought at both Twitter and Facebook \emph{er, will be...}
+Community participation has been sought at both Twitter and Facebook
 before submission of this proposal to the Unicode Consortium to make sure this proposal is
 congruent with the those the emoji is intended to represent.
 
-\subsection*{Document Compile Instructions}
-This subsection to be removed before final submission.
-
-For those familiar with \LaTeX{} who wish to submit a pull request, this PDF document
-should compile with any somewhat recent version of
-\myhref{https://tug.org/texlive/}{\TeX{}Live} as long as you have the
-\myhref{https://ctan.org/tex-archive/fonts/LuxiMono/}{LuxiMono} font pack installed. I believe
-all the other needed \LaTeX{} packages are part of a standard \TeX{}Live install.
-
-The \LaTeX{} files in the github repository are intended to be compiled into a PDF document
-using the following method:
-
-\begin{verbatim}
-pdflatex proposal.tex && pdflatex proposal.tex && pdflatex proposal.tex
-\end{verbatim}
-
-Do not include updated PDF if your pull request, but please do check that and TeX changes
-do not break compiling of the document.
-
-For those not familiar with \LaTeX{} just open an issue with the github project with your
-suggested changes.
+Feedback from members of the community on both Twitter and Facebook has been positive. It
+is only a very small sampling of the larger community, but I did my best to contact as
+many members of the community as I could.
 
