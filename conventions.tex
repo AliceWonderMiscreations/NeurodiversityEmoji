@@ -17,10 +17,10 @@ Existing emojis used in this document will be referenced using upper case bold t
 followed by an image of the emoji.
 
 Unfortunately \TeX{}Live does not directly support color emoji fonts. I was forced to
-create the following hack:
+use the following hack:
 
 \begin{verbatim}
-\newcommand{\emojipedia}[1]{$\vcenter{\hbox{\includegraphics[height=\baselineskip]{emojipedia/#1}}}$}
+$\vcenter{\hbox{\includegraphics[height=\baselineskip]{emojiasimage.png}}}$
 \end{verbatim}
 
 It works visually but it means the emoji can not be copied into a clipboard as the
